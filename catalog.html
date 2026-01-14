@@ -9,6 +9,89 @@
     <meta name="description" content="Каталог свежей домашней выпечки: торты на заказ, пироги, кексы, маффины, печенье ручной работы. Натуральные ингредиенты. Доставка по городу.">
     <meta name="keywords" content="каталог домашней выпечки, торты на заказ цена, пироги с доставкой, кексы домашние, печенье ручной работы, сладости каталог">
     <meta name="author" content="SweetHomeBakery">
+
+    <!-- BreadcrumbList (хлебные крошки) для каталога -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://ваш-логин.github.io/delicious-bakery/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Каталог домашней выпечки",
+      "item": "https://ваш-логин.github.io/delicious-bakery/catalog.html"
+    }
+  ]
+}
+</script>
+
+<!-- CollectionPage для каталога продуктов -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Каталог домашней выпечки | Торты, пироги, печенье с доставкой",
+  "description": "Каталог свежей домашней выпечки: торты на заказ, пироги, кексы, маффины, печенье ручной работы. Натуральные ингредиенты.",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": "6",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Торт 'Нежность' шоколадный",
+          "description": "Нежный шоколадный бисквит с кремом из сливок и свежими сезонными ягодами",
+          "offers": {
+            "@type": "Offer",
+            "price": "45",
+            "priceCurrency": "BYN",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Торт 'Медовый рай'",
+          "description": "Медовые коржи со сметанным кремом и клубничной прослойкой",
+          "offers": {
+            "@type": "Offer",
+            "price": "60",
+            "priceCurrency": "BYN",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Набор капкейков 'Радуга'",
+          "description": "6 разноцветных капкейков с ванильным, шоколадным и фруктовым кремом",
+          "offers": {
+            "@type": "Offer",
+            "price": "20",
+            "priceCurrency": "BYN",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      }
+    ]
+  }
+}
+</script>
     
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome для иконок соцсетей -->
@@ -445,3 +528,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
