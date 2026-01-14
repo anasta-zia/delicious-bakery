@@ -463,4 +463,56 @@ h3 {
         margin-left: 0;
         margin-top: 10px;
     }
+
 }   
+/* Стили для каталога */
+.catalog-social {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+}
+
+.catalog-social h3 {
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.share-catalog-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.share-catalog-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.share-catalog-btn i {
+    font-size: 18px;
+}
+
+.share-catalog-btn.vk { background-color: #4a76a8; }
+.share-catalog-btn.facebook { background-color: #3b5998; }
+.share-catalog-btn.twitter { background-color: #1da1f2; }
+
+.share-catalog-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
