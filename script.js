@@ -80,3 +80,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Обработчики для кнопок соцсетей в каталоге
+document.querySelectorAll('.social-share-btn, .share-catalog-btn, .share-page-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const social = this.getAttribute('data-social');
+        const title = this.getAttribute('data-title') || document.title;
+        const url = this.getAttribute('data-url') || window.location.href;
+        const description = this.getAttribute('data-description') || '';
+        
+        shareOnSocial(social, title, url, description);
+    });
+});
+
+// Функция shareOnSocial должна быть уже добавлена в script.js
