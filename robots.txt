@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search/
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+
+Sitemap: https://anasta-zia.github.io/delicious-bakery/sitemap.xml
